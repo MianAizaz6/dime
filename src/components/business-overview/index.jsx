@@ -1,5 +1,6 @@
+import editIcon from '../../assets/svgs/edit.svg';
 
-const BusinessOverview = () => {
+const BusinessOverview = ({ toggle }) => {
   return (
     <div className="flex flex-col gap-6">
       <div className="relative flex w-full flex-col gap-4">
@@ -10,7 +11,7 @@ const BusinessOverview = () => {
             <div>
               <div id="business_viability" className="mt-4">
                 <div className="prose relative max-w-full text-base sm:text-lg">
-                  <div className="text-xl font-semibold sm:text-2xl mb-6">Business viability</div>
+                  <div className="text-xl font-semibold sm:text-2xl mb-6 flex gap-3 items-center">Business viability <span onClick={() => toggle()} className=' cursor-pointer'> <img src={editIcon} alt="" className='w-[20px] h-[20px]' /></span></div>
 
                   <div className="edit-sections"><div className="wmde-markdown wmde-markdown-color "><p>Airbnbs viability can be assessed by examining key performance indicators and comparing them with industry benchmarks:</p>
                     <ol>
@@ -34,7 +35,7 @@ const BusinessOverview = () => {
 
             <div id="business_overview" className="mt-4">
               <div className="prose relative max-w-full text-base sm:text-lg">
-                <div className="text-xl font-semibold sm:text-2xl mb-6">Business overview</div>
+                <div className="text-xl font-semibold sm:text-2xl mb-6 flex items-center gap-3">Business overview  <span onClick={() => toggle()} className=' cursor-pointer'> <img src={editIcon} alt="" className='w-[20px] h-[20px]' /></span></div>
 
                 <div className="edit-sections"><div className="wmde-markdown wmde-markdown-color "><p>Our company is a digital marketplace for authentic travel experiences, connecting hosts with underutilized spaces to travelers seeking unique accommodations and local adventures.</p>
                   <p><strong>Problem:</strong>
@@ -61,7 +62,7 @@ const BusinessOverview = () => {
 
             <div id="monotization_strategies" className="mt-4">
               <div className="prose relative max-w-full text-base sm:text-lg">
-                <div className="text-xl font-semibold sm:text-2xl mb-6">Monetization strategies</div>
+                <div className="text-xl font-semibold sm:text-2xl flex gap-3 items-center mb-6">Monetization strategies  <span onClick={() => toggle()} className=' cursor-pointer'> <img src={editIcon} alt="" className='w-[20px] h-[20px]' /></span></div>
 
                 <h3 id="user-content-safe-ways-to-monetize"><a href="#safe-ways-to-monetize"></a>Safe Ways to Monetize</h3>
 
@@ -84,7 +85,7 @@ const BusinessOverview = () => {
 
             <div id="user_pain_points" className="mt-4">
               <div className="prose relative max-w-full text-base sm:text-lg">
-                <div className="text-xl font-semibold sm:text-2xl mb-6">User pain points</div>
+                <div className="text-xl font-semibold sm:text-2xl mb-6 flex gap-3 items-center ">User pain points  <span onClick={() => toggle()} className=' cursor-pointer'> <img src={editIcon} alt="" className='w-[20px] h-[20px]' /></span></div>
 
                 <div className="edit-sections"><div className="wmde-markdown wmde-markdown-color "><p>Here are some potential pain points of your users and your unique solution:</p>
                   <ol className="list-decimal flex flex-col gap-4">
@@ -115,7 +116,7 @@ const BusinessOverview = () => {
 
             <div id="market_opportunities" className="mt-4">
               <div className="prose relative max-w-full text-base sm:text-lg">
-                <div className="text-xl font-semibold sm:text-2xl mb-6">Revenue and market opportunities</div>
+                <div className="text-xl font-semibold sm:text-2xl flex gap-3 items-center mb-6">Revenue and market opportunities  <span onClick={() => toggle()} className=' cursor-pointer'> <img src={editIcon} alt="" className='w-[20px] h-[20px]' /></span></div>
 
                 <div className="edit-sections"><div className="wmde-markdown wmde-markdown-color flex flex-col gap-4 "><p>To analyze the market potential for Airbnb, well use available data and insights from similar accommodations and travel industry market sizes.</p>
                   <p>Total Addressable Market (TAM): The TAM for Airbnb encompasses the entire global short-term lodging market, including all segments from budget to luxury accommodations. It also includes the market for unique experiences associated with travel. With the global hotel and accommodations industry valued in the trillions and the rising trend of alternative lodging options, Airbnbs TAM could be assumed to be a significant portion of this – potentially in the several hundreds of billions of dollars, factoring in the demand for unique stays and experiences that go beyond traditional hotel accommodations.</p>
@@ -127,7 +128,7 @@ const BusinessOverview = () => {
 
             <div id="potential_risks" className="mt-4">
               <div className="prose relative max-w-full text-base sm:text-lg">
-                <div className="text-xl font-semibold sm:text-2xl mb-6">Potential risks</div>
+                <div className="text-xl font-semibold sm:text-2xl mb-6 flex gap-3 items-center">Potential risks  <span onClick={() => toggle()} className=' cursor-pointer'> <img src={editIcon} alt="" className='w-[20px] h-[20px]' /></span></div>
 
                 <div className="wmde-markdown wmde-markdown-color "><ol className="list-decimal px-4">
                   <li>
@@ -151,7 +152,7 @@ const BusinessOverview = () => {
 
             <div id="why_now" className="mt-4">
               <div className="prose relative max-w-full text-base sm:text-lg">
-                <div className="text-xl font-semibold sm:text-2xl mb-6">Why now</div>
+                <div className="text-xl font-semibold sm:text-2xl mb-6 flex items-center gap-3">Why now  <span onClick={() => toggle()} className=' cursor-pointer'> <img src={editIcon} alt="" className='w-[20px] h-[20px]' /></span></div>
 
                 <div className="wmde-markdown wmde-markdown-color "><p>The financial landscape for the sharing economy, where Airbnb operates, has seen a significant shift with the recovery from the global pandemic. As travel restrictions ease and consumer confidence returns, there is a surge in demand for travel and unique accommodation experiences. This resurgence is coupled with a growing interest in alternative investments and income streams, as traditional markets have shown volatility. The financial environment is ripe for platforms like Airbnb, which offer a means for property owners to generate revenue and for travelers to find cost-effective, personalized lodging options.</p>
                   <p>Behavioral habits have evolved, with a heightened emphasis on personal space, hygiene, and the desire for authentic experiences over traditional hotel stays. The pandemic has instilled a preference for less crowded and more controlled environments, which aligns with the offerings of Airbnb. Additionally, the rise of remote work has led to an increase in workations, where individuals blend work and vacation in unique settings. This trend supports the demand for Airbnbs diverse listings that can cater to both leisure and work-related needs.</p>

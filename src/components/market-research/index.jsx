@@ -1,16 +1,17 @@
+import editIcon from '../../assets/svgs/edit.svg';
 
-const MarketResearch = () => {
+const MarketResearch = ({toggle}) => {
   return (
     <div className="flex flex-col gap-6">
       <div className="relative flex w-full flex-col gap-4">
         <div className="flex flex-col">
-          <div className="sm:2xl my-4 text-3xl font-bold">Business overview</div>
+          <div className="sm:2xl my-4 text-3xl font-bold">Business overview </div>
 
           <div className="flex flex-col gap-4 sm:gap-6">
             <div>
               <div id="business_viability" className="mt-4">
                 <div className="prose relative max-w-full text-base sm:text-lg">
-                  <div className="text-xl font-semibold sm:text-2xl mb-6">Business viability</div>
+                  <div className="text-xl font-semibold sm:text-2xl mb-6 flex items-center gap-3">Business viability  <span onClick={() => toggle()} className=' cursor-pointer'> <img src={editIcon} alt="" className='w-[20px] h-[20px]' /></span></div>
 
                   <div className="edit-sections"><div className="wmde-markdown wmde-markdown-color "><p>Airbnbs viability can be assessed by examining key performance indicators and comparing them with industry benchmarks:</p>
                     <ol>
@@ -34,7 +35,7 @@ const MarketResearch = () => {
 
             <div id="trends_market" className="mt-4">
               <div className="prose relative max-w-full text-base sm:text-lg">
-                <div className="text-xl font-semibold sm:text-2xl mb-6">Trends in the market sector</div>
+                <div className="text-xl font-semibold sm:text-2xl mb-6 flex gap-3 items-center">Trends in the market sector  <span onClick={() => toggle()} className=' cursor-pointer'> <img src={editIcon} alt="" className='w-[20px] h-[20px]' /></span></div>
 
                 <div className="edit-sections"><div className="wmde-markdown wmde-markdown-color "><p>Our company is a digital marketplace for authentic travel experiences, connecting hosts with underutilized spaces to travelers seeking unique accommodations and local adventures.</p>
                   <p><strong>Problem:</strong>
@@ -84,7 +85,7 @@ const MarketResearch = () => {
 
             <div id="market_size" className="mt-4">
               <div className="prose relative max-w-full text-base sm:text-lg">
-                <div className="text-xl font-semibold sm:text-2xl mb-6">Market size and growth potential</div>
+                <div className="text-xl font-semibold sm:text-2xl mb-6 flex gap-3 items-center">Market size and growth potential  <span onClick={() => toggle()} className=' cursor-pointer'> <img src={editIcon} alt="" className='w-[20px] h-[20px]' /></span></div>
 
                 <div className="edit-sections"><div className="wmde-markdown wmde-markdown-color "><p>Here are some potential pain points of your users and your unique solution:</p>
                   <ol className="list-decimal flex flex-col gap-4">
@@ -115,7 +116,7 @@ const MarketResearch = () => {
 
             <div id="consumer_behavior" className="mt-4">
               <div className="prose relative max-w-full text-base sm:text-lg">
-                <div className="text-xl font-semibold sm:text-2xl mb-6">Consumer behaviour</div>
+                <div className="text-xl font-semibold sm:text-2xl flex gap-3 items-center mb-6">Consumer behaviour  <span onClick={() => toggle()} className=' cursor-pointer'> <img src={editIcon} alt="" className='w-[20px] h-[20px]' /></span></div>
 
                 <div className="edit-sections"><div className="wmde-markdown wmde-markdown-color flex flex-col gap-4 "><p>To analyze the market potential for Airbnb, well use available data and insights from similar accommodations and travel industry market sizes.</p>
                   <p>Total Addressable Market (TAM): The TAM for Airbnb encompasses the entire global short-term lodging market, including all segments from budget to luxury accommodations. It also includes the market for unique experiences associated with travel. With the global hotel and accommodations industry valued in the trillions and the rising trend of alternative lodging options, Airbnbs TAM could be assumed to be a significant portion of this – potentially in the several hundreds of billions of dollars, factoring in the demand for unique stays and experiences that go beyond traditional hotel accommodations.</p>
@@ -127,7 +128,7 @@ const MarketResearch = () => {
 
             <div id="customer_segmentation" className="mt-4">
               <div className="prose relative max-w-full text-base sm:text-lg">
-                <div className="text-xl font-semibold sm:text-2xl mb-6">Customer Segmentation</div>
+                <div className="text-xl font-semibold sm:text-2xl mb-6 flex items-center gap-3">Customer Segmentation  <span onClick={() => toggle()} className=' cursor-pointer'> <img src={editIcon} alt="" className='w-[20px] h-[20px]' /></span></div>
 
                 <div className="wmde-markdown wmde-markdown-color "><ol className="list-decimal px-4">
                   <li>
@@ -151,7 +152,7 @@ const MarketResearch = () => {
 
             <div id="regulatory_environment" className="mt-4">
               <div className="prose relative max-w-full text-base sm:text-lg">
-                <div className="text-xl font-semibold sm:text-2xl mb-6">Regulatory Environment</div>
+                <div className="text-xl font-semibold sm:text-2xl mb-6 flex gap-3 items-center">Regulatory Environment  <span onClick={() => toggle()} className=' cursor-pointer'> <img src={editIcon} alt="" className='w-[20px] h-[20px]' /></span></div>
 
                 <div className="wmde-markdown wmde-markdown-color "><p>The financial landscape for the sharing economy, where Airbnb operates, has seen a significant shift with the recovery from the global pandemic. As travel restrictions ease and consumer confidence returns, there is a surge in demand for travel and unique accommodation experiences. This resurgence is coupled with a growing interest in alternative investments and income streams, as traditional markets have shown volatility. The financial environment is ripe for platforms like Airbnb, which offer a means for property owners to generate revenue and for travelers to find cost-effective, personalized lodging options.</p>
                   <p>Behavioral habits have evolved, with a heightened emphasis on personal space, hygiene, and the desire for authentic experiences over traditional hotel stays. The pandemic has instilled a preference for less crowded and more controlled environments, which aligns with the offerings of Airbnb. Additionally, the rise of remote work has led to an increase in workations, where individuals blend work and vacation in unique settings. This trend supports the demand for Airbnb's diverse listings that can cater to both leisure and work-related needs.</p>
